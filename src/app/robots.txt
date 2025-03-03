@@ -1,0 +1,13 @@
+# This section applies to all web crawlers
+User-Agent: *
+# Allow all content by default
+Allow: /
+# Disallow specific directories
+Disallow: /merchant/
+Disallow: /consumer/
+Disallow: /corporate/
+Disallow: /charity/
+
+# Sitemap of the website
+# Uncomment the following line to include the sitemap
+# Sitemap: https://acme.com/sitemap.xml

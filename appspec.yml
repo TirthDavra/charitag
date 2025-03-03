@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/frontend/charitag-fr/
+    overwrite: true
+file_exists_behavior: OVERWRITE
+# after install
+#Hooks
+hooks:
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+      runas: root
