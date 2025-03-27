@@ -12,7 +12,7 @@ export default function useScroll(threshold: number) {
     return () => window.removeEventListener("scroll", onScroll);
   }, [onScroll]);
 
-  // also check on first load
+  // also check on first loads
   useEffect(() => {
     onScroll();
   }, [onScroll]);
